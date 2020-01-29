@@ -23,8 +23,10 @@ function currentLine(line) {
   } return message
 }
 
+var count = 1
 function giveANumber(line) {
-  line.push(line.)
+  line.push(count)
+  count++
 }
 
 /* Rather than add another if statement to handle the last person not needing a comma, I stop the loop before the last person and add another concat to handle their special case. The loop is ended early by comparing the counter to the line length minus 1.
